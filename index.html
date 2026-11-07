@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Site Name</title>
+  <meta name="description" content="A one-sentence description of your site.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">Your Site Name</a>
+      <nav class="nav">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="presentation.html">Presentation</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <!-- EDIT: your headline and intro -->
+        <h1>A clear, simple headline goes here</h1>
+        <p>One or two sentences that tell visitors what this is about and why it matters to them.</p>
+        <a class="button" href="presentation.html">Watch the presentation</a>
+      </div>
+    </section>
+
+    <section class="container cards">
+      <!-- EDIT: three short highlights, or delete this section -->
+      <div class="card">
+        <h2>First point</h2>
+        <p>A short supporting detail about your topic.</p>
+      </div>
+      <div class="card">
+        <h2>Second point</h2>
+        <p>Another short supporting detail.</p>
+      </div>
+      <div class="card">
+        <h2>Third point</h2>
+        <p>One more detail, or a way to get in touch.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      &copy; <span id="year">2026</span> Your Name
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

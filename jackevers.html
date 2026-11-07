@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Presentation | Your Site Name</title>
+  <meta name="description" content="Watch the presentation and download the slides.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">Your Site Name</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="presentation.html" aria-current="page">Presentation</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-head">
+      <!-- EDIT: presentation title and a short description -->
+      <h1>Presentation Title</h1>
+      <p>A sentence or two about what the presentation covers.</p>
+    </section>
+
+    <!--
+      EDIT: VIDEO
+      YouTube: replace VIDEO_ID with the code after "v=" in the video's URL
+               e.g. youtube.com/watch?v=dQw4w9WgXcQ  ->  dQw4w9WgXcQ
+      Vimeo:   use  src="https://player.vimeo.com/video/VIDEO_ID"  instead
+    -->
+    <div class="video">
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/VIDEO_ID"
+        title="Presentation video"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+        loading="lazy"></iframe>
+    </div>
+
+    <!--
+      EDIT: DOWNLOAD
+      Put your file in a folder named "files" in the repo and match the name below.
+    -->
+    <section class="download">
+      <div>
+        <h2>Download the slides</h2>
+        <p>PDF &middot; file size</p>
+      </div>
+      <a class="button" href="files/presentation.pdf" download>Download</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      &copy; <span id="year">2026</span> Your Name
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
